@@ -3,14 +3,15 @@
 		font-size:150px
 	}
 
-	.nav_header{
-		display:block
-	}
-
-	.burger{
+	.burger_menu{
 		display: none;
 	}
+
+	.container{
+		max-width: 1000px;
+	}
  }
+
  @media (orientation:portrait){ 
  	.intro_title{
  		font-size:200px
@@ -20,7 +21,26 @@
 		display:none
 	}
 
-	.burger{
+	.burger_menu{
 		display: block;
+	}
+
+	.logo_img{
+		display: none;
+	}
+
+	.container{
+		max-width: 900px;
+	}
+
+	.intro_slider{
+		display: none;
+	}
+
+	.section_title{
+		font-size: 90px;
+	}
+	.section_subtitle{
+		font-size: 60px;
 	}
  }
