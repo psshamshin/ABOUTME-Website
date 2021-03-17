@@ -1,0 +1,26 @@
+@media (orientation:landscape){
+	.intro_title{
+		font-size:150px
+	}
+
+	.nav_header{
+		display:block
+	}
+
+	.burger{
+		display: none;
+	}
+ }
+ @media (orientation:portrait){ 
+ 	.intro_title{
+ 		font-size:200px
+ 	}
+
+ 	.nav_header{
+		display:none
+	}
+
+	.burger{
+		display: block;
+	}
+ }
