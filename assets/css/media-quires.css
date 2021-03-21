@@ -1,15 +1,9 @@
 @media (orientation:landscape){
-	.intro_title{
-		font-size:150px
-	}
 
 	.burger_menu{
 		display: none;
 	}
 
-	.container{
-		max-width: 1000px;
-	}
  }
 
  @media (orientation:portrait){ 
@@ -40,8 +34,24 @@
 	.section_title{
 		font-size: 90px;
 	}
-	
+
 	.section_subtitle{
 		font-size: 60px;
+	}
+
+	.intro{
+		height: 750px;
+	}
+
+	.intro_subtitle{
+		font-size: 50px;
+	}
+
+	.intro_subtitle:after{
+		margin-top: 200px;
+	}
+
+	.button{
+		font-size: 40px;
 	}
  }

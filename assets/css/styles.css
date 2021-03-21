@@ -15,9 +15,9 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .container {
-	width: 100%;
-	max-width: 1000px;
+	max-width: 80%;
 	margin: 0 auto;
+	max-height: 100%;
 }
 
 /*Header*/
@@ -46,7 +46,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .logo_img{
-	width: 15%;
+	width: 13vw;
 }
 
 .nav_header {
@@ -94,37 +94,40 @@ h1,h2,h3,h4,h5,h6,p{
 /* INTRO */
 
 .intro {
+	height: 47vw;
 	margin = 0;
 	text-align: center;
-	width: 100%;
-	height: 750px;
+	/*height: 100vh;*/
 	background: url("../img/green.png") center no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
+	position: relative;
 }
 
 .inner_title {
 	margin: auto;
-	max-width: 900px;
+	/*max-width: 900px;*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .intro_title{
-	font-size: 150px;
+	/*font-size: 150px;*/
+	font-size: 15vw;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
 	line-height: 1;
-	padding-top: 30px;
+	padding-top: 40px;
 	opacity: 0.6;
 	/*flex-grow: 5;*/
 	/*color: #fff;*/
 }
 
 .text_big{
-	font-size: 100px;
+	/*font-size: 100px;*/
+	font-size: 8vw;
 	text-align: center;
 	text-transform: uppercase;
 	margin-right: 30px;
@@ -147,7 +150,8 @@ h1,h2,h3,h4,h5,h6,p{
 
 .intro_subtitle{
 	font-family: 'Kaushan Script', cursive;	
-	font-size: 50px;
+	/*font-size: 50px;*/
+	font-size: 3vw;
 
 	margin: auto;
 	color: #333;
@@ -168,7 +172,7 @@ h1,h2,h3,h4,h5,h6,p{
 	height: 3px;
 	background-color: #fff;
 	opacity: .3;
-	margin: 200px auto 0;
+	margin: 3vw auto 0;
 }
 
 .button{
@@ -178,7 +182,8 @@ h1,h2,h3,h4,h5,h6,p{
 	color: #fff;
 	opacity: 0.3;
 	font-family: 'Kaushan Script', cursive;
-	font-size: 25px;
+	/*font-size: 25px;*/
+	font-size: 2vw;
 	text-decoration: none;
 	font-weight: 700;
 
@@ -190,16 +195,20 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .intro_slider{
+	width: 80%;
 	display: flex;
 	justify-content: space-between;
+	position: absolute;
+	bottom: 10px;
 }
 
 .slider_item{
 	text-decoration: none;
-	font-size: 14px;
-	color: #fff;	
-	margin-top: 85px;
-	margin-bottom: 40px;
+	/*font-size: 14px;*/
+	font-size: 1.2vw;
+	color: #fff;
+	/*margin-top: 85px;
+	margin-bottom: 40px;*/
 	border-top: 3px solid;
 	width: 15%;
 	opacity: 0.3;
@@ -226,8 +235,8 @@ h1,h2,h3,h4,h5,h6,p{
 	opacity: 0.9;
 	width: 19%;
 	text-align: center;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -239,9 +248,8 @@ h1,h2,h3,h4,h5,h6,p{
 /*SECTION WITH PIC*/
 
 .section{
-	padding: 80px 0;
+	padding: 10px 0;
 	width: 100%;
-	height: 800px;
 
 	background: url("../img/bg_1.png") center no-repeat;
 	-webkit-background-size: cover;
@@ -274,8 +282,8 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .section_title{
-	
-	font-size: 60px;
+	/*font-size: 60px;*/
+	font-size: 9vw;
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -296,7 +304,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .about{
-	margin-top: 60px;
+	margin-top: 50px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -345,6 +353,17 @@ h1,h2,h3,h4,h5,h6,p{
 	width: 30%;
 }
 
+.colors_hash{
+	color: #d5ccb3;
+}
+
+.colors_hash--2{
+	color: #933ab5;
+}
+
+.colors_hash--3{
+	color: #5e1d21;
+}
 /*FOOTER*/
 
 .footer{
@@ -406,7 +425,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* SERVICES */
 .services{
-	padding-top: 50px;
+	padding-top: 40px;
 	display: flex;
 	/*justify-content: space-between;*/
 }
@@ -414,24 +433,17 @@ h1,h2,h3,h4,h5,h6,p{
 .services_item{
 	padding-left: 90px;
 	padding-right: 20px;
+	margin-bottom: 150px;
 	position: relative;
 	flex: 1 1 0;
 	border-right: 1px solid #fff;
+
 }
 
-.services_item:nth-child(3){
-	border-right: none;
+.services_item:nth-child(1){
+	border-left: 1px solid #fff;
 }
-/*
-.services:after{
-	width: 110%;
-	content: "";
-	display: block;
-	height: 3px;
-	background-color: #333;
-	opacity: .9;
-}
-*/
+
 .services_ico{
 	position: absolute;
 	top: 7px;
@@ -440,28 +452,46 @@ h1,h2,h3,h4,h5,h6,p{
 	width: 15%;
 }
 
-.services_ico--2{
+.services_ico--links{
 	position: absolute;
-	top: 7px;
-	left: 130px;
+	opacity: 0.5;
+	transition: opacity .1s linear;
+	top: 150px;
+	left: 105px;
 	z-index: 1;
 	width: 15%;
 }
 
+.services_ico--links:hover{
+	opacity: 1;
+}
+
 .services_title{
 	font-family: 'Kaushan Script', cursive;
-	font-size: 55px;
+	font-size: 4vw;
+	text-align: center;
 }
 
 .services_title--2{
 	font-family: 'Montserrat', sans-serif;
-	font-size: 55px;
+	font-size: 4vw;
+	text-align: center;
 }
 
 .services_title--3{
 	font-family: 'Montserrat', sans-serif;
-	font-size: 55px;
+	font-size: 4vw;
 	opacity: .6;
+	text-align: center;
+}
+
+.services_text{
+	text-align: center;
+	font-size: 2vw;
+}
+
+.text_big--services{
+	font-size: 12vw;
 }
 
 .text_big--services:after{
@@ -475,3 +505,17 @@ h1,h2,h3,h4,h5,h6,p{
 	margin: 28px auto 0;
 	margin-bottom: 28px;
 }
+
+.section_title--com{
+	text-transform: lowercase;
+	font-family: 'Kaushan Script', cursive;
+	color: #fff;
+	opacity: .3;
+}
+/*
+.section--pasha{
+	background: url("../img/bg_2.png") center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+*/
