@@ -264,7 +264,7 @@ h1,h2,h3,h4,h5,h6,p{
 	padding: 10px 0;
 	width: 100%;
 	height: 47vw;
-
+	
 	background: url("../img/bg_1.png") center no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -284,9 +284,24 @@ h1,h2,h3,h4,h5,h6,p{
 	background-size: cover;
 }
 
+.intro_title--bio{
+	padding-top: 10px;
+}
+
 .section--services{
 	background: none;
 	background-color: #92af83;
+}
+
+.dark_line{
+	width: 100vw;
+	height: 1vw;
+	background-color: #333;
+	opacity: 0.8;
+	/*
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff; 
+	*/
 }
 
 .section_header{
@@ -404,7 +419,7 @@ h1,h2,h3,h4,h5,h6,p{
 .footer_text{
 	color: #fff;
 	font-family: 'Kaushan Script', cursive;
-	font-size: 25px;
+	font-size: 2vw;
 	opacity: 0.3;
 	transition: opacity .1s linear;
 	padding-top: 10px;
@@ -440,6 +455,10 @@ h1,h2,h3,h4,h5,h6,p{
 	opacity: 0.3;
 	font-size: 14px;
 	padding-bottom: 10px;
+}
+
+.copyright_text{
+	font-size: 1.5vw;
 }
 
 /* SERVICES */
