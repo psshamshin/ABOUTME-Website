@@ -31,8 +31,28 @@
 		display: none;
 	}
 
+	.section{
+		height: 750px;
+	}
+
 	.section_title{
-		font-size: 90px;
+		font-size: 100px;
+	}
+
+	.section_title:after{
+		margin-top: 20px;
+	}
+
+	.about_item{
+		width: 30%;
+	}
+	
+	.colors_item{
+		width: 30%;
+	}
+	
+	.section_text{
+		font-size: 25px;
 	}
 
 	.section_subtitle{
@@ -45,10 +65,6 @@
 
 	.intro_subtitle{
 		font-size: 50px;
-	}
-
-	.intro_subtitle:after{
-		margin-top: 200px;
 	}
 
 	.button{
