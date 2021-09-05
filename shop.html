@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="assets/css/styles.css" >
+	<link rel="stylesheet" href="assets/css/media-quires.css" >
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+	<!--script type="assets/js/script.js" defer></script-->
+
+	<script>
+		function add_to_cart(cost, id){
+			let li_of_goods = ['white', 'purple', 'red', 'blue', 'green', 'pink'];
+
+			if (sessionStorage.key(0)==null){
+				for (let i = 0; i < li_of_goods.length; i++){
+					sessionStorage.setItem(li_of_goods[i], parseInt(0));
+				}
+			}
+			sessionStorage.setItem(id, parseInt(sessionStorage.getItem(id), 10)+1);
+
+			if (sessionStorage.getItem('sum')==null){
+				sessionStorage.setItem('sum',0);
+			}
+			sessionStorage.setItem('sum', parseInt(sessionStorage.getItem('sum'), 10)+cost); 
+		}
+
+	</script>
+	
+
+	<title>PS-Shop</title>
+</head>
+
+<body>
+	<!--Section about Shop-->
+
+	<div class="dark_line"></div>
+
+	<section class="section section--shop_header">
+		<div class="container">
+			<div class="inner_header">
+				<a class="nav_link nav_link--dark" href="index.html">Main page</a>
+			</div>
+
+			<div class="section_header">
+				
+				<h1 class="intro_title intro_title--section">SHOP</h1>
+
+				<h1 class="section_subtitle">About what can you buy here</h1>
+			</div>
+		</div>
+	</section>
+
+
+	<div class="dark_line"></div>
+
+
+	<section class="section section--shop_main">
+		<div class="container">
+
+			<div class="section_header">
+				<div class="inner_title">
+					<div class="logo_img">
+						<img src="assets/img/logo.png" width="50%">
+					</div>
+					<h2 class="section_title">arts</h2>
+					<div class="logo_img">
+						<img src="assets/img/logo.png" width="50%">
+					</div>
+				</div>
+				
+				<h1 class="section_subtitle">About my works</h1>
+
+				<div class="section_text">
+					<p>Minimum basic colors. Variaty of tints created by lights and shadows.</p>
+				</div>
+			</div>
+
+			<div class="shop">
+				<div class="shop_item">
+					<div class="shop_img">
+						<img src="assets/img/city_caramel.jpg" alt="" width="100%" onclick="add_to_cart(10, 'white')">
+					</div>
+					<div class="shop_text">$10</div>
+				</div>
+
+				<div class="shop_item">
+					<div class="shop_img">
+						<img src="assets/img/city_pink.png" alt="" width="100%" onclick="add_to_cart(10, 'pink')">
+					</div>
+					<div class="shop_text">$10</div>
+				</div>
+
+				<div class="shop_item">
+					<div class="shop_img">
+						<img src="assets/img/city_violet.jpg" alt="" width="100%" onclick="add_to_cart(10, 'purple')">
+					</div>
+					<div class="shop_text">$10</div>
+				</div>
+			</div>
+
+
+			<div class="shop">
+				<div class="shop_item">
+					<div class="shop_img">
+						<img src="assets/img/city_dark_red.jpg" alt="" width="100%" onclick="add_to_cart(10, 'red')">
+					</div>
+					<div class="shop_text">$10</div>
+				</div>
+
+				<div class="shop_item">
+					<div class="shop_img">
+						<img src="assets/img/city_green.png" alt="" width="100%" onclick="add_to_cart(10, 'green')">
+					</div>
+					<div class="shop_text">$10</div>
+				</div>
+
+				<div class="shop_item">
+					<div class="shop_img">
+						<img src="assets/img/city_blue.png" alt="" width="100%" onclick="add_to_cart(10, 'blue')">
+					</div>
+					<div class="shop_text">$10</div>
+				</div>
+			</div>
+
+
+
+		</div>
+	</section>
+
+
+	<div class="dark_line"></div>
+
+
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="footer_title">
+				<h3>MGIMO University</h3>
+			</div>
+			
+			<p class="footer_text">Respice post te! Hominem te memento!</p>
+
+			<div class="socials">
+				
+				<a href="https://vk.com/psshamshin">
+					<img class="socials_item" src="assets/img/vk.png" width="30%">
+				</a>
+
+				<a href="https://www.instagram.com/pasha.made.in.russia">
+					<img class="socials_item" src="assets/img/instagram.png" width="30%">
+				</a>
+
+				<a href="https://t.me/pasha_made_in_russia">
+					<img class="socials_item" src="assets/img/telegram.png" width="30%">
+				</a>
+			</div>
+
+			<div class="copyright">
+				<h3 class="copyright_text">Copyright ©2021 ARTLAB Designed By PS</h3>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
