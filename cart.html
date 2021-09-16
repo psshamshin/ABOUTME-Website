@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		text = '';
+		
+		window.onload=function print(){
+			//alert('hui');
+
+			let li_of_goods = ['white', 'purple', 'red', 'blue', 'green', 'pink'];
+			let li_of_costs = [10, 10, 10, 10, 10, 10];
+			let n_of_goods = [0, 0, 0, 0, 0, 0];
+
+
+			for (let i = 0; i < li_of_goods.length; i++){
+				//n_of_goods += sessionStorage.getItem('name_' + i) + '\n';
+				
+				n_of_goods[i] = parseInt(sessionStorage.getItem(li_of_goods[i]));
+			}
+
+			//text += '-----------\n' + 'sum: ' + sessionStorage.getItem('sum');
+			//alert(n_of_goods);
+			for (let i = 0; i < li_of_goods.length; i++){
+				if (n_of_goods[i] != 0){
+					text += li_of_goods[i]+' -$'+li_of_costs[i]+'  x' + n_of_goods[i] + '\n';
+				}
+			}
+
+			text += '--------\nsum: $' + sessionStorage.getItem('sum');
+			if (sessionStorage.getItem('sum') == null){
+				document.getElementById('output_1').value='';	
+				alert('cart is empty');
+			}
+			else{
+				document.getElementById('output_1').value=text;	
+			}
+			
+		}
+
+		function clear_storage(){
+			sessionStorage.clear();
+			document.getElementById('output_1').value='';	
+		}
+
+	</script>
+</head>
+<body>
+	<textarea id="output_1" rows="30" cols="15" ></textarea>
+	<input type="button" OnClick="clear_storage()" value="Clear cart">
+</body>
+</html>
