@@ -570,7 +570,7 @@ h1,h2,h3,h4,h5,h6,p{
 .shop{
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 3vw;
+	margin-bottom: 1vw;
 }
 
 .shop_item{
@@ -620,4 +620,15 @@ h1,h2,h3,h4,h5,h6,p{
 	z-index: 2;
 	transform: translate3d(0px, -50%, 0px);
 	transition: opacity .1s linear;
+}
+
+
+.select_good{
+	width: 90%;
+	margin-left: 1.3vw;
+	margin-bottom: 0.8vw;
+	background-color: #f6f0dd;
+	font-family: 'Montserrat', cursive;
+	font-size: 1.5vw;
+	border-radius: 1vw;
 }
