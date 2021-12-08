@@ -10,7 +10,11 @@
 
 	<!--script type="assets/js/script.js" defer></script-->
 
+	<script src="assets/js/jquery-3.6.0.min.js" type = "text/javascript"></script>
 	<script src = "assets/js/script.js" type = "text/javascript"></script>
+
+	<script src="assets/js/jquery-ui.min.js" type="text/javascript"></script>
+	<!--link rel="stylesheet" href="assets/js/jquery-ui.structure.css"></script-->
 	
 	<title>PS-Shop</title>
 </head>
@@ -59,10 +63,20 @@
 				<div class="section_text">
 					<p>Minimum basic colors. Variaty of tints created by lights and shadows.</p>
 				</div>
+
+				<div class="cart_graggable">
+					<img src="assets/img/cart_img.png" height="90%">
+				</div>
+
+				<div class="search">
+					<input type="text" size="40" id="inp_text">
+					<button id="but_search">Go</button>
+				</div>
+				
 			</div>
 
 			<div class="shop">
-				<div class="shop_item">
+				<div class="shop_item" id="white_i">
 					<div class="shop_img">
 						<img src="assets/img/city_caramel.jpg" alt="" width="100%" onclick="add_to_cart('white',10)">
 					</div>
@@ -70,14 +84,14 @@
 				</div>
 
 
-				<div class="shop_item">
+				<div class="shop_item" id="pink_i">
 					<div class="shop_img">
 						<img src="assets/img/city_pink.png" alt="" width="100%" onclick="add_to_cart('pink', 10)">
 					</div>
 					<div class="shop_text">$10</div>
 				</div>
 
-				<div class="shop_item">
+				<div class="shop_item" id="violet_i">
 					<div class="shop_img">
 						<img src="assets/img/city_violet.jpg" alt="" width="100%" onclick="add_to_cart('purple', 10)">
 					</div>
@@ -87,7 +101,7 @@
 
 
 			<div class="colors">
-				<div class="shop_item">
+				<div class="shop_item" id="white_is">
 					<select class="select_good" id="white">
 						<option value="0">1080x1080</option>
 						<option value="1">1920x1920</option>
@@ -95,7 +109,7 @@
 				</div>
 
 
-				<div class="shop_item">
+				<div class="shop_item" id="pink_is">
 					<select class="select_good" name="aa" id="pink">
 						<option value="0">1080x1080</option>
 						<option value="1">1920x1920</option>
@@ -103,7 +117,7 @@
 				</div>
 
 
-				<div class="shop_item">
+				<div class="shop_item" id="viol_is">
 					<select class="select_good" name="aa" id="purple">
 						<option value="0">1080x1080</option>
 						<option value="1">1920x1920</option>
@@ -113,21 +127,21 @@
 
 
 			<div class="shop">
-				<div class="shop_item">
+				<div class="shop_item" id="red_i">
 					<div class="shop_img">
 						<img src="assets/img/city_dark_red.jpg" alt="" width="100%" onclick="add_to_cart('red', 10)">
 					</div>
 					<div class="shop_text">$10</div>
 				</div>
 
-				<div class="shop_item">
+				<div class="shop_item" id="green_i">
 					<div class="shop_img">
 						<img src="assets/img/city_green.png" alt="" width="100%" onclick="add_to_cart('green', 10)">
 					</div>
 					<div class="shop_text">$10</div>
 				</div>
 
-				<div class="shop_item">
+				<div class="shop_item" id="blue_i">
 					<div class="shop_img">
 						<img src="assets/img/city_blue.png" alt="" width="100%" onclick="add_to_cart('blue', 10)">
 					</div>
@@ -137,7 +151,7 @@
 
 
 			<div class="colors">
-				<div class="shop_item">
+				<div class="shop_item" id="red_is">
 					<select class="select_good" name="aa" id="red">
 						<option value="0">1080x1080</option>
 						<option value="1">1920x1920</option>
@@ -145,7 +159,7 @@
 				</div>
 
 
-				<div class="shop_item">
+				<div class="shop_item" id="green_is">
 					<select class="select_good" name="aa" id="green">
 						<option value="0">1080x1080</option>
 						<option value="1">1920x1920</option>
@@ -153,7 +167,7 @@
 				</div>
 
 
-				<div class="shop_item">
+				<div class="shop_item" id="blue_is">
 					<select class="select_good" name="aa" id="blue">
 						<option value="0">1080x1080</option>
 						<option value="1">1920x1920</option>

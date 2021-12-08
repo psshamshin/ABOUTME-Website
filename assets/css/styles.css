@@ -313,8 +313,9 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .section--shop_main{
-	height: 80vw;
+	height: 120vw;
 	opacity: 1;
+	/*margin-bottom: 5vw;*/
 }
 
 .section--gallery{
@@ -676,4 +677,59 @@ h1,h2,h3,h4,h5,h6,p{
 	margin-top: 5vw;
 	border-radius: 5vw;
 	/*border: 10px black;*/
+}
+
+.inner_dark_plate{
+	height: 10%;
+	align-self: center;
+}
+
+.cart_item{
+	display: flex;
+	justify-content: space-between;
+	height: 10vw;
+	width: 90%;
+	margin: auto;
+	background-color: white;
+	border-top: solid 10px;
+	border-radius: 10px;
+}
+
+.text_good{
+	margin: auto;
+	font-size: 3vw;
+}
+
+.cancel_button{
+	margin: auto;
+}
+
+.img_cart{
+	margin-left: 2vw;
+	margin-bottom: 0.5vw;
+	margin-top: 0.5vw;
+	border: solid;
+	border-radius: 1vw;
+}
+
+.download_bill{
+	height: 3vw;
+	background-color: #f6f0dd;
+	display: flex;
+	justify-content: space-between;
+}
+
+.search{
+	display: flex;
+	justify-content: space-between;
+	width: 10vw;
+	margin-top: 1vw;
+}
+
+.cart_graggable{
+	margin-top: 3vw;
+	width: 100%;
+	height: 30vw;
+	border-radius: 1vw;
+	border: solid black 0.3vw;
 }
